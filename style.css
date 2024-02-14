@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#main {
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#banner {
+    height: 130vh;
+    width: 5vw;
+    background-color: #eeeefb;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+#banner i {
+    margin-top: 10px;
+    /* padding-top: 10px; */
+    font-size: 1rem;
+
+}
+
+ul {
+    margin-top: 40px;
+    list-style: none;
+}
+
+
+#top {
+    /* padding: 0px 10px; */
+    height: 10vh;
+    /* width: 95vw; */
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(205, 204, 204);
+    font-size: 1rem;
+}
+
+#right {
+    width: 95vw;
+}
+
+#top-right i {
+    margin-right: 15px;
+    padding: 10px;
+}
+
+#top-left i {
+    padding: 10px;
+}
+
+#record-row {
+    display: flex;
+    gap: 20px;
+}
+
+#record {
+    margin: 20px;
+}
+
+.record-box {
+    height: 80px;
+    width: 20%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#record-row :nth-child(odd) {
+    background-color: #d0e8f9;
+}
+
+#record-row :nth-child(even) {
+    background-color: #e6e6fa;
+}
+
+.record-box-top {
+    margin: 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    background-color: inherit !important;
+}
+
+.record-box-bottom {
+    margin: 14px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: inherit !important;
+}
+
+#search {
+    margin: 20px 30px;
+}
+
+#search h4 {
+    padding: 10px 0px;
+}
+
+#search-data {
+    padding-bottom: 30px;
+    height: max-content;
+    width: 90vw;
+    border-radius: 10px;
+    background-color: #d0e8f9;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    border: rgb(0, 0, 0) 1px solid;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 18px;
+    text-align: left;
+}
+
+
+
+#search-form {
+    align-self: center;
+    padding: 0px 20px;
+}
+
+#search-data h5 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#search-form input {
+    margin: 0px 12px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(126, 120, 120);
+}
+
+#search-form button {
+    margin: 20px;
+    padding: 10px 30px;
+    background-color: white;
+    color: rgb(36, 128, 198);
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid rgb(36, 128, 198);
+}
+
+#student-table {
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: rgb(230, 227, 227);
+}
+
+#student-table div {
+
+    margin: 10px 0px;
+    padding: 0px 50px;
+    /* border: 1px solid black; */
+}
+
+@media (max-width: 700px) {
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner {
+        height: 10vh;
+        width: 100vw;
+        background-color: #eeeefb;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .ri-menu-line {
+        display: none;
+    }
+
+    #banner ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        padding: 0px 10px;
+    }
+
+    ul {
+        margin-top: 0px;
+        list-style: none;
+    }
+
+    #top {
+        height: 10vh;
+        width: 100vw;
+    }
+
+    #right {
+        width: 100vw;
+    }
+
+    .record-box-top {
+        margin: 0px;
+        font-weight: 600;
+        font-size: 0.6rem;
+        background-color: inherit !important;
+    }
+
+    .record-box-bottom {
+        margin-left: 0px;
+        font-weight: 600;
+        font-size: 0.8rem;
+        background-color: inherit !important;
+    }
+
+    .record-box {
+        padding: 10px;
+        margin: 0px;
+        width: 25%;
+        border-radius: 10px;
+    }
+
+    #record h4 {
+        font-size: small;
+        margin-bottom: 2px;
+    }
+
+    #record {
+        margin: 10px 15px;
+    }
+
+    #search {
+        margin: 10px 15px;
+    }
+
+    #search-data {
+        width: 92vw;
+    }
+
+    #search-data h5 {
+        font-size: small;
+    }
+
+    #search-form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #search-form input {
+        margin: 5px;
+        padding: 0;
+    }
+
+    #search-form button {
+        margin: 10px;
+        padding: 7px 20px;
+    }
+
+    #student-table {
+        margin-left: 0px;
+        display: flex;
+        /* justify-content: center; */
+        align-items: start;
+        width: 100%;
+        border-collapse: collapse;
+        background-color: rgb(230, 227, 227);
+    }
+
+
+    th,
+    td {
+        padding: 1px;
+        text-align: center;
+    }
+}
